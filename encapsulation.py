@@ -19,15 +19,15 @@ class Credential:
 #Used __init__() method to store the password
 user = Credential("Person1")
 user.showPassword()
-#Output: Your current password is Avtkl
+#Output: Hi Person1 Your current password is Avtkl
 
 #tried to update password using updatePassword
 user.updatePassword("JKJKJK", "Person2")
 user.showPassword()
-#Output: Your current password is JKJKJK
+#Output: Hi Person2 Your current password is JKJKJK
 
 #Can't change it because Python treats  __password as private attributes.
 user.__password = "jhjsd"
 user.name = "Person3"
 user.showPassword()
-#Output: Your current password is JKJKJK
+#Output: Hi Person3 Your current password is JKJKJK
